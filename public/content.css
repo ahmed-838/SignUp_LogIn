@@ -1,0 +1,112 @@
+/* content.css */
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body takes up at least the full viewport height */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-left li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav-left li:last-child {
+    margin-right: 0;
+}
+
+.nav-left li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-right {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    right: 0;
+    text-align: left;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-arrow {
+    margin-left: 5px;
+}
+
+.hero-section {
+    flex: 1; /* Allow the hero section to expand to fill available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.logo img {
+    margin-bottom: 20px; /* Add some space between the logo and the text */
+}
+
+.sub-heading {
+    font-size: 24px;
+}
+
+footer {
+    margin-top: auto; /* Push the footer to the bottom */
+    margin-right: 20px; /* Add some margin to the right */
+    text-align: right;
+}
